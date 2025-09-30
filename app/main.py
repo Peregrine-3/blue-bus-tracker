@@ -8,3 +8,7 @@ def root():
 @app.get("/buses/{route_id}")
 def get_buses(route_id: int):
     return{"route_id": route_id, "next_bus_min": 4}
+
+@app.get("/deez")
+def deez():
+    return{"message: ": "Deez Nutz"}
